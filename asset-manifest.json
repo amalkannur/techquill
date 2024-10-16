@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/techquill/static/css/main.f855e6bc.css",
-    "main.js": "/techquill/static/js/main.58dcb3b2.js",
+    "main.css": "/techquill/static/css/main.0ee0828f.css",
+    "main.js": "/techquill/static/js/main.f4d827a6.js",
     "static/js/453.a5a0e610.chunk.js": "/techquill/static/js/453.a5a0e610.chunk.js",
-    "static/media/logo.svg": "/techquill/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/techquill/index.html",
-    "main.f855e6bc.css.map": "/techquill/static/css/main.f855e6bc.css.map",
-    "main.58dcb3b2.js.map": "/techquill/static/js/main.58dcb3b2.js.map",
+    "main.0ee0828f.css.map": "/techquill/static/css/main.0ee0828f.css.map",
+    "main.f4d827a6.js.map": "/techquill/static/js/main.f4d827a6.js.map",
     "453.a5a0e610.chunk.js.map": "/techquill/static/js/453.a5a0e610.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.58dcb3b2.js"
+    "static/css/main.0ee0828f.css",
+    "static/js/main.f4d827a6.js"
   ]
 }
