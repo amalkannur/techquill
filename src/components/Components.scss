@@ -1,0 +1,13 @@
+.Navbar{ 
+    width: 96%; 
+    margin: auto;
+
+    .nav-items{ 
+        list-style-type: none;
+
+        a{ 
+            padding: 12px 20px; 
+            background: gray; 
+        }
+    }
+}
