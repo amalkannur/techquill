@@ -1,0 +1,18 @@
+$transition250 : all ease-in 250ms ;
+$transition300 : all ease-in 300ms ;
+
+$pageWidth : 96% ;
+$pageMargin : auto;
+
+$color1 :#1d242c ;
+$color2 :#0F4D78 ;
+$color3 :#0176C3 ;
+$color4 :#3394D2 ;
+$color5 :#64B2E1 ;
+$color6 :#C7EEFF ;
+$color7 :#FAFAFA ;
+
+.App{ 
+    background-color: $color7;
+    color: $color1;
+}

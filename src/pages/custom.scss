@@ -1,0 +1,120 @@
+$transition250 : all ease-in 250ms ;
+$transition300 : all ease-in 300ms ;
+
+$pageWidth : 96% ;
+$pageMargin : auto;
+
+$color1 :#1d242c ;
+$color2 :#0F4D78 ;
+$color3 :#0176C3 ;
+$color4 :#3394D2 ;
+$color5 :#64B2E1 ;
+$color6 :#C7EEFF ;
+$color7 :#FAFAFA ;
+
+
+.Home{ 
+ .banner{ 
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .wave1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        opacity: 0.7;
+    }
+
+    .wave2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        opacity: 0.7;
+    }
+
+
+    .video-play{ 
+        background: $color5; 
+        border-radius: 50%;
+        width: 42px; 
+        height: 42px;
+        padding-left: 2px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        transition: $transition250;
+        position: relative;
+        svg{ 
+            z-index: 2;
+        }
+
+        &::before{ 
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            background: $color4 ;
+            z-index: 0;
+            animation: ripple 2s infinite ease-in-out;
+        }
+
+        &::after{ 
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            background: $color4 ;
+            z-index: 0;
+            animation: ripple 2s infinite ease-in-out;
+            animation-delay: 0.5s;
+        }
+    }
+    .howitworks{ 
+        color: $color5;
+        text-decoration: none; 
+        transition: $transition250;
+        &:hover{ 
+            color: $color4;
+        }
+    }
+ }
+}
+
+
+
+
+
+@media screen and (max-width:742px) {
+    .banner{ 
+        .wave1{ 
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+@keyframes ripple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.9);
+        opacity: 0;
+    }
+}
