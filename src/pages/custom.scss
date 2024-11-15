@@ -14,7 +14,7 @@ $color7 :#FAFAFA ;
 
 
 .Home{ 
- .banner{ 
+ .home_banner{ 
     min-height: 70vh;
     display: flex;
     justify-content: center;
@@ -90,10 +90,213 @@ $color7 :#FAFAFA ;
         }
     }
  }
+ .home_about{ 
+    // background-color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 0px -14px 5px 3px rgba(244,249,252,1);
+    position: relative;
+    overflow: hidden;
+
+    .AbstractBg2{ 
+        position: absolute;
+        top: -20px;
+        right: -80px;
+        max-width: 70%;
+    }
+    ul{ 
+        li{ 
+            list-style-type: none;
+            &::before{ 
+                content: "•"; /* This is the bullet character */
+                color:$color5; /* Set the color of the dot */
+                font-size: 1.6em; /* Adjust size if needed */
+                margin-right: 8px; /* Space between the dot and the text */
+            }
+        }
+    }
+ }
+
+ .home_services{ 
+    .w-md-70{ 
+        width: 70%;
+    }
+    .services-items{ 
+        .services-itembox{ 
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            box-shadow: 3px 4px 30px rgba(136, 136, 136, 0.1);
+            border-radius: 5px;
+            padding: 30px 25px;
+            height: 470px;
+            margin: 16px 0;
+            transition: $transition300;
+            position: relative;
+            .imgdiv{ 
+                height: 200px;
+            }
+         
+            img{ 
+                width: 120px;
+                margin-bottom: 18px;
+                transition: $transition250;
+            }
+            a{ 
+                margin-top: 28px;
+                color: black;
+                text-decoration: none;
+            }
+            &::before{ 
+                content: "";
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                bottom: 0%;
+                left: 0%;
+                background: $color4;
+                transition: all 0.52s;
+            }
+            &:hover{ 
+                box-shadow: 3px 4px 30px rgba(136, 136, 136, 0.3);
+                img{ 
+                    width: 126px;
+                }
+
+                &::before{ 
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    position: absolute;
+                    bottom: 0%;
+                    left: 0%;
+                    background: $color4;
+                    transition: all 0.52s;
+                }
+            }
+        }
+    }
+ }
+
+ .home_accordian{ 
+    position: relative;
+    .AbstractBg3{ 
+        left: -30px;
+        top: -40px;
+        position: absolute;
+        max-width: 70%;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: #fff !important;
+        background-color: $color4 !important;
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    }
+ }
+ 
+ .home_helpbox{ 
+    position: relative;
+    background-color: $color6;
+    margin-top: 120px;
+    text-align: left;
+    .help-container{ 
+        position: relative;
+        padding: 50px;
+        .helpimg{ 
+            position: absolute;
+            height: 140%;
+            bottom: 0;
+            right: 0;
+        }
+    }
+ }
+
+ .home_contact{ 
+    background: #e9f8ff;
+
+    .messagebox{ 
+        border-radius: 28px;
+        background: $color4;
+        color: $color7;
+        position: relative;
+        .abstract1{ 
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        input, textarea{ 
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid $color7;
+            padding: 12px;
+            margin-top: 12px;
+            outline: 0;
+            color: $color7;
+            width: 100%;
+        }
+        .submitbtn{ 
+            background: $color7;
+            color: $color2;
+            margin-top: 12px;
+            transition: $transition300;
+            &:hover{ 
+                background: $color6;
+            }
+        }
+
+        ::placeholder {
+            color: $color6;
+          }
+    }
+
+    .contactimgbox{ 
+       .imgdiv{ 
+        border: 1px solid $color6;
+        border-radius: 12px;
+        padding: 4px;
+        height: 80px;
+        max-width: 80px;
+        display: flex;
+        justify-content: center;
+       }
+        img{ 
+            height: 100%;
+        }
+    }
+    .letstalk{ 
+        color: #97ccec;
+    }
+ }
+footer{ 
+    background: #e9f8ff;
+    h5{ 
+        margin-bottom: 22px;
+    }
+    a{ 
+        color: $color2;
+        text-decoration: none;
+        border-bottom: 1px solid #e9f8ff;
+        transition: $transition300;
+        margin-left: 6px;
+        &:hover{ 
+           border-bottom: 1px solid black;
+           margin-left: 9px;
+        }
+    }
+}
 }
 
 
 
+
+
+
+
+
+
+
+// ================= MEDIA QUERY =================
 
 
 @media screen and (max-width:742px) {
@@ -101,6 +304,15 @@ $color7 :#FAFAFA ;
         .wave1{ 
             display: none;
         }
+    }
+    .home_services{ 
+        .w-md-70{ 
+            width: 100% !important;
+        }
+    }
+    .home_helpbox{ 
+        margin-top: 16px !important;
+        text-align: center !important;
     }
 }
 
