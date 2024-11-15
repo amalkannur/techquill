@@ -1,3 +1,14 @@
+$transition250 : all ease-in 250ms ;
+$transition300 : all ease-in 300ms ;
+
+$color1 :#1d242c ;
+$color2 :#0F4D78 ;
+$color3 :#0176C3 ;
+$color4 :#3394D2 ;
+$color5 :#64B2E1 ;
+$color6 :#C7EEFF ;
+$color7 :#FAFAFA ;
+
 .Navbar{ 
     width: 96%; 
     margin: auto;
@@ -7,7 +18,68 @@
 
         a{ 
             padding: 12px 20px; 
-            background: gray; 
+            text-decoration: none;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            color: $color1;
+            transition: $transition250 ;
+            &:hover{ 
+                color: $color4;
+            }
         }
+    }
+    .menu-btn{ 
+        border: 0; 
+    }
+    .offcanvas{ 
+        max-width: 34%;
+    }
+    .connect-btn{ 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        a{ 
+            border-radius: 0; 
+            border: 1px solid $color4;
+            padding: 6px 12px ;
+            text-decoration: none; 
+            color: $color4;
+            font-weight: 500; 
+            cursor: pointer;
+            transition: $transition250;
+            &:hover{ 
+                background-color: $color5; 
+                border: 1px solid $color5;
+                color: $color7;
+            }
+        }
+    }
+}
+
+.PrimaryBtn{ 
+    background-color: $color5; 
+    color: $color1; 
+    padding: 12px 42px;
+    border: 0; 
+    border-radius: 4px; 
+    font-weight: 500;
+    color: $color7;
+    transition: $transition250;
+    &:hover{ 
+        background-color: $color4;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:762px) {
+    .PrimaryBtn{ 
+        padding: 10px 18px;
     }
 }

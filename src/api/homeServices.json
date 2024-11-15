@@ -1,0 +1,43 @@
+[
+    
+    { 
+        "image" : "https://trogonmedia.com/assets/images/web-development.png",
+        "title" : "Web Design & Development" ,
+        "text": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" ,
+        "id" : 1
+    } ,
+    { 
+        "image" : "https://trogonmedia.com/assets/images/app-development.png",
+        "title" : "Content Writing & Creation" ,
+        "text": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" ,
+        "id" : 2
+    }
+    ,
+    { 
+        "image" : "https://trogonmedia.com/assets/images/social-media.png",
+        "title" : "Digital Marketing Services" ,
+        "text": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" ,
+        "id" : 3
+    }
+    ,
+    { 
+        "image" : "https://trogonmedia.com/assets/images/data-analysis.png",
+        "title" : "Graphic Design Services" ,
+        "text": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" ,
+        "id" : 4
+    }
+    ,
+    { 
+        "image" : "https://trogonmedia.com/assets/images/mobile-shopping.png",
+        "title" : "E-Commerce" ,
+        "text": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" ,
+        "id" : 5
+    }
+    ,
+    { 
+        "image" : "https://trogonmedia.com/assets/images/erp.png",
+        "title" : "Enterprise Solutions" ,
+        "text": "Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" ,
+        "id" : 6
+    }
+]
